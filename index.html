@@ -3,183 +3,127 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>CompanyName — Landing Page</title>
-		<meta
-			name="description"
-			content="A professional landing page template for product/service demos."
-		/>
+		<title>Landing Page Demo</title>
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 
 	<body>
-		<header class="site-header">
-			<div class="container header-inner">
-				<div class="brand">CompanyName</div>
-				<nav class="nav">
-					<a href="#features">Features</a>
-					<a href="#pricing">Pricing</a>
-					<a href="#contact">Contact</a>
+		<header class="topbar">
+			<div class="topbar-inner">
+				<div class="brand">
+					<span class="brand-name">Demo Portal</span>
+					<span class="brand-badge">Info</span>
+				</div>
+
+				<nav class="top-links">
+					<a href="#overview">Overview</a>
+					<a href="#instructions">Instructions</a>
+					<a href="#resources">Resources</a>
 				</nav>
-				<a class="button button-outline" href="#contact">Get a demo</a>
 			</div>
 		</header>
 
-		<main>
-			<section class="hero">
-				<div class="container hero-grid">
-					<div>
-						<p class="eyebrow">New · Professional Landing Page</p>
-						<h1>Build a polished front page in plain HTML + CSS.</h1>
-						<p class="lead">
-							Use this template to experiment with layout, typography, spacing, and
-							components—no backend required.
+		<main class="page">
+			<div class="container">
+				<h1 class="page-title">Welcome</h1>
+				<p class="page-subtitle">
+					This is a clean, white landing page with a few information boxes. Replace any
+					text/links as needed.
+				</p>
+
+				<section id="overview" class="panel">
+					<div class="panel-header">
+						<h2>Before you begin</h2>
+						<a class="panel-action" href="#">Start</a>
+					</div>
+
+					<div class="panel-body">
+						<p>
+							Quick checklist items (filler text). Make sure you have everything ready
+							before you proceed.
 						</p>
-						<div class="cta-row">
-							<a class="button" href="#pricing">See pricing</a>
-							<a class="button button-ghost" href="#features">Explore features</a>
-						</div>
-						<p class="fineprint">
-							Placeholder copy and links · Replace with real content later.
+						<ul>
+							<li>Have your reference number ready</li>
+							<li>Set aside ~10–15 minutes</li>
+							<li>Use a modern browser (Chrome/Safari/Firefox)</li>
+						</ul>
+						<p class="muted">
+							Helpful links:
+							<a href="https://example.com" target="_blank" rel="noreferrer">Example link</a>
+							·
+							<a href="https://example.com" target="_blank" rel="noreferrer">FAQ</a>
 						</p>
 					</div>
+				</section>
 
-					<div class="mock-card" aria-hidden="true">
-						<div class="mock-top">
-							<div class="dot red"></div>
-							<div class="dot yellow"></div>
-							<div class="dot green"></div>
-						</div>
-						<div class="mock-body">
-							<div class="skeleton title"></div>
-							<div class="skeleton line"></div>
-							<div class="skeleton line"></div>
-							<div class="skeleton line short"></div>
-							<div class="mock-stats">
-								<div class="stat">
-									<div class="stat-num">99.9%</div>
-									<div class="stat-label">Uptime</div>
-								</div>
-								<div class="stat">
-									<div class="stat-num">2 min</div>
-									<div class="stat-label">Setup</div>
-								</div>
-								<div class="stat">
-									<div class="stat-num">24/7</div>
-									<div class="stat-label">Support</div>
-								</div>
-							</div>
-						</div>
+				<section id="instructions" class="panel">
+					<div class="panel-header">
+						<h2>How this demo works</h2>
+						<button class="panel-toggle" type="button" aria-label="Collapse section">–</button>
 					</div>
-				</div>
-			</section>
 
-			<section id="features" class="section">
-				<div class="container">
-					<h2>Features</h2>
-					<p class="section-lead">
-						Keep it simple: a few strong benefits, written clearly.
-					</p>
-
-					<div class="grid-3">
-						<div class="card">
-							<h3>Clear value</h3>
-							<p>One sentence explaining what the product does and who it’s for.</p>
-						</div>
-						<div class="card">
-							<h3>Fast to edit</h3>
-							<p>Everything is static—change text and refresh.</p>
-						</div>
-						<div class="card">
-							<h3>Looks modern</h3>
-							<p>Spacing, type scale, and buttons are already tuned.</p>
-						</div>
+					<div class="panel-body">
+						<ol>
+							<li>Read each section header and skim the details</li>
+							<li>Click the links to see how they look in a “boxed info” layout</li>
+							<li>Adjust spacing, font sizes, and colors until it feels professional</li>
+						</ol>
+						<p class="muted">
+							For details, see
+							<a href="https://example.com" target="_blank" rel="noreferrer">documentation</a>.
+						</p>
 					</div>
-				</div>
-			</section>
+				</section>
 
-			<section id="pricing" class="section alt">
-				<div class="container">
-					<h2>Pricing</h2>
-					<p class="section-lead">Fake plans for layout testing.</p>
-
-					<div class="grid-3">
-						<div class="card">
-							<h3>Starter</h3>
-							<p class="price">$0</p>
-							<ul class="list">
-								<li>Basic features</li>
-								<li>Email support</li>
-								<li>Single user</li>
-							</ul>
-							<a class="button button-outline block" href="#contact">Choose</a>
-						</div>
-
-						<div class="card featured">
-							<p class="badge">Most popular</p>
-							<h3>Pro</h3>
-							<p class="price">$19</p>
-							<ul class="list">
-								<li>Everything in Starter</li>
-								<li>Advanced components</li>
-								<li>Priority support</li>
-							</ul>
-							<a class="button block" href="#contact">Choose</a>
-						</div>
-
-						<div class="card">
-							<h3>Business</h3>
-							<p class="price">$49</p>
-							<ul class="list">
-								<li>Team access</li>
-								<li>Custom styling</li>
-								<li>SLAs</li>
-							</ul>
-							<a class="button button-outline block" href="#contact">Choose</a>
-						</div>
+				<section class="panel">
+					<div class="panel-header collapsed-style">
+						<h2>Need help?</h2>
+						<span class="panel-icon">+</span>
 					</div>
-				</div>
-			</section>
+					<div class="panel-body">
+						<p>
+							Filler support text with a couple of links:
+							<a href="https://example.com" target="_blank" rel="noreferrer">Contact</a>,
+							<a href="https://example.com" target="_blank" rel="noreferrer">Status</a>.
+						</p>
+					</div>
+				</section>
 
-			<section id="contact" class="section">
-				<div class="container">
-					<h2>Contact</h2>
-					<p class="section-lead">
-						This is just a visual form (no backend). You can wire it later.
-					</p>
+				<section id="resources" class="panel">
+					<div class="panel-header collapsed-style">
+						<h2>Privacy statement</h2>
+						<span class="panel-icon">+</span>
+					</div>
+					<div class="panel-body">
+						<p>
+							This is placeholder content. Write one or two paragraphs describing what data
+							is collected and how it’s used.
+						</p>
+						<p class="muted">
+							Read more:
+							<a href="https://example.com" target="_blank" rel="noreferrer">Privacy policy</a>
+						</p>
+					</div>
+				</section>
 
-					<form class="form" onsubmit="return false;">
-						<label>
-							Name
-							<input placeholder="Jane Doe" />
-						</label>
-						<label>
-							Email
-							<input type="email" placeholder="jane@company.com" />
-						</label>
-						<label>
-							Message
-							<textarea rows="5" placeholder="Tell us what you’re building..."></textarea>
-						</label>
-						<button class="button" type="submit">Send message</button>
-						<p class="fineprint">Tip: later you can connect this to Formspree/Netlify Forms.</p>
-					</form>
-				</div>
-			</section>
-		</main>
+				<section class="panel">
+					<div class="panel-header collapsed-style">
+						<h2>Browser requirements</h2>
+						<span class="panel-icon">+</span>
+					</div>
+					<div class="panel-body">
+						<ul>
+							<li>Latest Chrome, Safari, or Firefox</li>
+							<li>JavaScript enabled (optional for this demo)</li>
+							<li>Screen width ≥ 360px (mobile-friendly)</li>
+						</ul>
+					</div>
+				</section>
 
-		<footer class="site-footer">
-			<div class="container footer-inner">
-				<p>© <span id="y"></span> CompanyName. All rights reserved.</p>
-				<div class="footer-links">
-					<a href="#">Privacy</a>
-					<a href="#">Terms</a>
-					<a href="#">Status</a>
-				</div>
+				<footer class="footer">
+					<p>© 2026 Demo Portal · <a href="https://example.com">Terms</a> · <a href="https://example.com">Privacy</a></p>
+				</footer>
 			</div>
-		</footer>
-
-		<script>
-			document.getElementById("y").textContent = new Date().getFullYear();
-		</script>
+		</main>
 	</body>
 </html>
